@@ -10,9 +10,6 @@ This can be used to clone the repo on remote(GitHub) to your local folder. - Can
 git add <file_name>
 This command add file to next commit
 
-git restore <file_name>
-This command to remove the file from stage(added for next commit)
-
 git add .
 This command add all untracked or modified files for next commit
 
@@ -72,5 +69,12 @@ to get changes from other_branch_name to ur working branch
 
     Here branch name is primary branch where code merged in.
 
-
 ### Handle conflicts in merge ###
+git diff <other branch name>
+To see the differance between two branches code.
+
+### Undoing changes ###
+
+git restore <file_name>
+This command to remove the file from stage(added for next commit)
+
