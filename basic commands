@@ -1,0 +1,36 @@
+git clone <http path of the repo on github>
+This can be used to clone the repo on remote(GitHub) to your local folder. - Only for Public repo.
+
+git clone https://username:password/name/repo.git
+This can be used to clone the repo on remote(GitHub) to your local folder. - Can be used for private or public repo.
+
+
+git add <file_name>
+This command add file to next commit
+
+git restore <file_name>
+This command to remove the file from stage(added for next commit)
+
+git add .
+This command add all untracked or modified files for next commit
+
+git commit -m "commit message"
+This will create a snapshot for all added files
+
+git init
+Inform Git to start tracking the new folder in local system
+
+git remote add origin <github repo url>
+To add remote repo information with name origin in local git, origin can be any name but default we use origin.
+
+git remote -v
+To check the remote repo linked with current local repo
+
+git branch -M <branch_name>
+To create new branch in local repo, like master or main
+
+git push -u origin <branch_name>
+To push the committed code to remote (origin) repo on master branch, here u flag tells use same remote repo (origin) and branch name now onwards with git push command.
+
+git branch
+To check the current branch you are working
