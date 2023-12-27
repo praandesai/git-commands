@@ -57,10 +57,10 @@ To delete branch
 1. Code way
 
 git checkout <branch_name>
-To enter in branch which you want to merge
+To enter in branch in which you want merge comes in
 
 git merge <other_branch_name>
-To merge code of working branch to the given branch
+to get changes from other_branch_name to ur working branch
 
 2. PR (Pull Request Way)
     - In GitHub > Open the Repos > Pull Request > Merge Pull Request > Confirm Merge
