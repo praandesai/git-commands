@@ -1,10 +1,12 @@
+### Start local repo by cloning remote repo ###
+
 git clone <http path of the repo on github>
 This can be used to clone the repo on remote(GitHub) to your local folder. - Only for Public repo.
 
 git clone https://username:password/name/repo.git
 This can be used to clone the repo on remote(GitHub) to your local folder. - Can be used for private or public repo.
 
-
+### Basic commit workflow ###
 git add <file_name>
 This command add file to next commit
 
@@ -17,6 +19,7 @@ This command add all untracked or modified files for next commit
 git commit -m "commit message"
 This will create a snapshot for all added files
 
+### Start git local repo and add it to GitHub Remote Repo (New Repo)
 git init
 Inform Git to start tracking the new folder in local system
 
@@ -26,11 +29,48 @@ To add remote repo information with name origin in local git, origin can be any 
 git remote -v
 To check the remote repo linked with current local repo
 
-git branch -M <branch_name>
-To create new branch in local repo, like master or main
-
 git push -u origin <branch_name>
 To push the committed code to remote (origin) repo on master branch, here u flag tells use same remote repo (origin) and branch name now onwards with git push command.
 
+### Git Branch ###
 git branch
 To check the current branch you are working
+
+git branch
+To check the workign branch name
+
+git checkout <branch_name>
+To enter into the branch
+
+git checkout -b <branch_name>
+To create a new branch
+
+git branch -M <branch_name>
+To change the branch name 
+
+git checkout -d <branch_name>
+To delete branch
+
+### Merge Branches ###
+### There are two ways to merge the code of tow branches ###
+
+1. Code way
+
+git checkout <branch_name>
+To enter in branch which you want to merge
+
+git merge <other_branch_name>
+To merge code of working branch to the given branch
+
+2. PR (Pull Request Way)
+    - In GitHub > Open the Repos > Pull Request > Merge Pull Request > Confirm Merge
+
+    This merge happaned on GitHub, to pull the changes to local repo us below
+
+    in local systme in project folder
+    git pull origin <branch_name>
+
+    Here branch name is primary branch where code merged in.
+
+
+### Handle conflicts in merge ###
